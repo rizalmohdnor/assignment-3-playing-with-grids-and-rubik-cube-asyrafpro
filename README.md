@@ -1,22 +1,31 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/6l4sY1d2)
-# Assignment 2: Play with a 2x2 Rubik Cube
-by 
+# 2x2 Rubik's Cube Application
 
-**NAME**:
+**NAME: Muhammad Amirul Asyraf bin Mohd Kamal**
+**Matric ID: 2115565**  
 
-**Matric ID**
+## Objective  
+This project is a simple 2x2 Rubik’s Cube application built using Flutter. The application allows users to visualize and interact with a digital Rubik’s Cube by rotating its faces through button controls.
 
-## Objective
+## Implementation Details  
+- ✅ **1. Completed the Cube Representation**  
+  Defined six faces of the 2x2 Rubik’s Cube with appropriate colors:  
+  - Front (Red)  
+  - Left (Blue)  
+  - Right (Green)  
+  - Back (Yellow)  
+  - Top (Orange)  
+  - Bottom (White)  
 
-1. Accept the assignment and make sure you have a copy of the code.
-2. The code provide a partially working code.
-3. Add the necessary faces of the rubik cube in the code.
-4. Modify the logic for rotating the 2x2 cube.
-5. Add buttons below the cube to create action buttons.
-6. Create a simple 2x2 rubik cube application that allows the user to rotate the faces of a rubik cube. The code given doesn't work. You may have to read the code and complete some functions and add buttons.
-7. Make sure to only submit your /lib folder and modify the readme to describe what was done. You must also include your name and matric ID in this readme file.
+- ✅ **2. Implemented Face Rotation Logic**  
+  Created a `rotateFaceClockwise(int faceIndex)` function to rotate any given face clockwise.  
+  Implemented `rotateTop()` and `rotateBottom()` to modify the cube’s state when the user interacts with the buttons.
 
-## Requirements:
+- ✅ **3. Added UI Components for Visualizing the Cube**  
+  Used GridView to display each face as a 2x2 grid of colored squares.  
+  Arranged the cube in a logical format to simulate a real Rubik's Cube view.
 
-Tips:
-Make sure to look at https://docs.flutter.dev/cookbook/lists/grid-lists to get a hang of the flutter grid layout which is being used in the code.
+- ✅ **4. Implemented Interactive Buttons for Rotation**  
+  Added two buttons to allow the user to rotate the cube:  
+  - **Rotate Top** → Rotates the top face clockwise and updates the adjacent edges.  
+  - **Rotate Bottom** → Rotates the bottom face clockwise and updates the adjacent edges.
